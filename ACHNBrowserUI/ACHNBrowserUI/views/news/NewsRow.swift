@@ -55,5 +55,7 @@ struct NewsRow: View {
         }
         .buttonStyle(BorderlessButtonStyle())
         .padding(.trailing, 4)
+        .accessibilityLabel(voted ? "Unlike" : "Like")
+        .accessibilityValue(voted ? "Liked" : "Not liked")
     }
 }
